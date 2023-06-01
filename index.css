@@ -1,0 +1,56 @@
+@font-face {
+	font-family: 'Pretendard';
+	src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff')
+		format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff')
+		format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+
+body {
+	font-family: 'Pretendard', sans-serif;
+	font-weight: 500;
+	width: 1200px;
+	padding: 20px 40px;
+}
+
+.set {
+	border-bottom: 1px solid #ddd;
+}
+
+.ans .code {
+	font-family: 'Nanum Gothic Coding', monospace;
+	padding: 20px;
+	border-radius: 4px;
+	background-color: #1a1a32;
+	color: #fff;
+	line-height: 1.5;
+}
+
+dl {
+	display: flex;
+}
+
+dl div {
+	min-width: 100px;
+	margin-right: 20px;
+}
+
+dt {
+	margin-bottom: 10px;
+}
+
+dd {
+	padding: 4px 10px;
+	margin-left: 0;
+	background-color: #ddd;
+}

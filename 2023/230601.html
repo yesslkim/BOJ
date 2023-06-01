@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../index.css">
   <title>230601</title>
 </head>
 
@@ -14,32 +15,36 @@
       <h2>10869 : 사칙연산</h2>
       <p>두 자연수 A와 B가 주어진다. 이때, A+B, A-B, A*B, A/B(몫), A%B(나머지)를 출력하는 프로그램을 작성하시오. </p>
       <dl>
-        <dt>예제입력</dt>
-        <dd class="code">7 3</dd>
-        <dt>예제출력</dt>
-        <dd class="code">10</dd>
-        <dd class="code">4</dd>
-        <dd class="code">21</dd>
-        <dd class="code">2</dd>
-        <dd class="code">1</dd>
+        <div>
+          <dt>예제입력</dt>
+          <dd class="code">7 3</dd>
+        </div>
+        <div>
+          <dt>예제출력</dt>
+          <dd class="code">10</dd>
+          <dd class="code">4</dd>
+          <dd class="code">21</dd>
+          <dd class="code">2</dd>
+          <dd class="code">1</dd>
+        </div>
       </dl>
     </section>
 
     <section class="ans">
       <h2>내가 쓴 정답</h2>
-      <code>
-        const fs = require('fs');
-        const numbers = fs.readFileSync('/dev/stdin').toString().split(' ');
-  
-        const A = Number(numbers[0]);
-        const B = Number(numbers[1]);
-  
-        console.log(A+B);
-        console.log(A-B);
-        console.log(A*B);
-        console.log(parseInt(A/B));
+      <div class="code">
+        const fs = require('fs'); <br />
+        const numbers = fs.readFileSync('/dev/stdin').toString().split(' '); <br /><br />
+
+        const A = Number(numbers[0]); <br />
+        const B = Number(numbers[1]); <br /><br />
+
+        console.log(A+B); <br />
+        console.log(A-B); <br />
+        console.log(A*B); <br />
+        console.log(parseInt(A/B)); <br />
         console.log(A%B);
-      </code>
+      </div>
       <h3>다른 사람 정답 정리</h3>
       <ul>
         <li><span>parseInt()</span>를 <span>Math.floor()</span>로 작성한 경우가 있음</li>
@@ -52,36 +57,36 @@
       <h2>2588 : 곱셈</h2>
       <p>(세 자리 수) × (세 자리 수) 차례대로 출력하기</p>
       <dl>
-        <dt>예제입력</dt>
-        <dd class="code">472</dd>
-        <dd class="code">385</dd>
-        <dt>예제출력</dt>
-        <dd class="code">2360</dd>
-        <dd class="code">3776</dd>
-        <dd class="code">1416</dd>
-        <dd class="code">181720</dd>
+        <div>
+          <dt>예제입력</dt>
+          <dd class="code">472</dd>
+          <dd class="code">385</dd>
+        </div>
+        <div>
+          <dt>예제출력</dt>
+          <dd class="code">2360</dd>
+          <dd class="code">3776</dd>
+          <dd class="code">1416</dd>
+          <dd class="code">181720</dd>
+        </div>
       </dl>
     </section>
 
     <section class="ans">
       <h2>내가 쓴 정답</h2>
-      <code>
-        const fs = require('fs');
-        const numbers = fs.readFileSync('/dev/stdin').toString().split('\n');
-        
-        const num1 = Number(numbers[0]);
-        const num2 = numbers[1].split('');
-        const results = num2.map(num => Number(num) * num1);
-        
-        console.log(results[2]);
-        console.log(results[1]);
-        console.log(results[0]);
+      <div class="code">
+        const fs = require('fs'); <br />
+        const numbers = fs.readFileSync('/dev/stdin').toString().split('\n'); <br /><br />
+
+        const num1 = Number(numbers[0]); <br />
+        const num2 = numbers[1].split(''); <br />
+        const results = num2.map(num => Number(num) * num1); <br /><br />
+
+        console.log(results[2]);<br />
+        console.log(results[1]);<br />
+        console.log(results[0]);<br />
         console.log(numbers[0] * numbers[1]);
-      </code>
-      <h3>다른 사람 정답 정리</h3>
-      <ul>
-        <li><span>parseInt()</span>를 <span>Math.floor()</span>로 작성한 경우가 있음</li>
-      </ul>
+      </div>
     </section>
   </article>
 
